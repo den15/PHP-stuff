@@ -1,0 +1,43 @@
+<h2><b>Result:</h2></b><table border="1"><tr><td><?php echo $re ?></td></tr></table>
+<h1><b>Calculator:</h1></b><br /><br /><br />
+<form action="calculator4.php" method="post"/>
+<p>Input1:<input type="text" name ="input1" size="10" maxlength="10" value=
+	"<?php
+	if (isset($_POST['input1'])) echo $_POST['input1'];
+	?>"
+	/></p>
+<p>Multiply:<input type="radio" name ="operator"value="M" 
+	<?php
+	if ($_REQUEST['operator']=='M') {
+		echo 'checked="checked"';
+	}
+	?>
+	size="1" maxlength="1"/>
+Divide:<input type="radio" name ="operator" value="D"
+	<?php
+	if ($_REQUEST['operator']=='D') {
+		echo 'checked="checked"';
+	}
+	?>
+ size="1" maxlength="1"/>
+Add:<input type="radio" name ="operator" value="A"
+	<?php
+	if ($_REQUEST['operator']=='A') {
+		echo 'checked="checked"';
+	}
+	?>
+ size="1" maxlength="1"/>
+Subtract:<input type="radio" name ="operator"value="S"
+	<?php
+	if ($_REQUEST['operator']=='S') {
+		echo 'checked="checked"';
+	}
+	?>
+ size="1" maxlength="1"/></p>
+<p>Input2:<input type="txt" name ="input2" size="10" maxlength="10" value=
+	"<?php
+	if (isset($_POST['input2'])) echo $_POST['input2'];
+	?>"
+	/></p>
+<p><input type="submit" name ="submit" value="calculate"/></p>
+<p><Input type="hidden" name="submitted" value="1"/></form>
