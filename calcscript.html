@@ -3,7 +3,8 @@
 <form action="calculator4.php" method="post"/>
 <p>Input1:<input type="text" name ="input1" size="10" maxlength="10" value=
 	"<?php
-	if (isset($_POST['input1'])) echo $_POST['input1'];
+	if (isset($_POST['input1']))
+		echo $_POST['input1'];
 	?>"
 	/></p>
 <p>Multiply:<input type="radio" name ="operator"value="M" 
