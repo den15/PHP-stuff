@@ -11,8 +11,10 @@ if (isset($_POST['submitted']))
 	$i2=$_REQUEST['input2'];
 	$op=$_REQUEST['operator'];
 	$re=$_REQUEST['result'];	
-	if (is_numeric ($i1) && is_numeric ($i2) && isset ($op));
-	{	switch ($op)
+	
+	if (is_numeric ($i1) && is_numeric ($i2) && isset ($op))
+	{
+		switch ($op)
 		{
 			case 'M';
 			$re=$i1*$i2;
@@ -31,10 +33,3 @@ if (isset($_POST['submitted']))
 	}
 }
 ?>
-$to = "someone@example.com";
-$subject = "Test mail";
-$message = "Hello! This is a simple email message.";
-$from = "someonelse@example.com";
-$headers = "From: $from";
-mail($to,$subject,$message,$headers);
-echo "Mail Sent.";

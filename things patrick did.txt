@@ -1,0 +1,30 @@
+- Download/install Git
+- Set up GitHub account at http://github.com
+- Create GitHub repository on the site
+- Create Git repository in /Library/WebServer/Documents
+	- cd /Library/WebServer/Documents
+	- git init
+	- git add *.html
+	- git add *.php
+	- git commit -am 'initial snapshot'
+	- git remote add origin git@github.com:den15/PHP-stuff.git
+    - git push origin master
+	- *make some changes*
+	- git status
+	- git diff (q to exit)
+	- got commit -am 'whitespace changes'
+	- git push
+	- git log
+
+- mate /Library/WebServer/Documents
+- Cmd + left/right curly brace to shift indentation in TextMate
+- How to enable mail() in PHP on OS X: http://theandystratton.com/2009/fix-phps-mail-function-after-latest-os-x-leopard-update
+- Terminal tutorial: http://osxfaq.com/Tutorials/LearningCenter/
+- C-a, start of line
+- C-k, kill line to right of cursor
+- C-p, up line
+- C-n, down line
+- C-h, backspace
+- C-f, forward one character
+- C-u, kill line to left
+- C-d, delete character to right of cursor
